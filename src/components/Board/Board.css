@@ -1,0 +1,79 @@
+[board].board {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* background-color: pink; */
+}
+
+[board] .board-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+[board] .cell {
+    height: 100px;
+    width: 100px;
+    border: 1px solid black;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+[board] .x {
+    position: relative;
+}
+
+[board] .x::before {
+    content: '';
+    position: absolute;
+    height: 50px;
+    width: 8px;
+    background-color: #000;
+    transform: rotate(45deg);
+}
+
+[board] .x::after {
+    content: '';
+    position: absolute;
+    height: 50px;
+    width: 8px;
+    background-color: #000;
+    transform: rotate(-45deg);
+}
+
+[board] .zero {
+    position: relative;
+}
+
+[board] .zero::before {
+    content: '';
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+    background-color: #000;
+}
+
+[board] .zero::after {
+    content: '';
+    position: absolute;
+    height: 35px;
+    width: 35px;
+    border-radius: 100%;
+    background-color: #fff;
+}
+
+[board] .win {
+    background-color: pink;
+}
+
+[board] .restart-button {
+    margin: 20px 0;
+    padding: 10px 30px;
+    width: 100%;
+    border: none;
+    text-transform: uppercase;
+    cursor: pointer;
+}

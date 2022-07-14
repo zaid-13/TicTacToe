@@ -1,0 +1,25 @@
+[info].info {
+    width: 100%;
+    position: absolute;
+    bottom: 30px;
+}
+
+[info] table {
+    width: 300px;
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+[info] th {
+    padding: 10px 20px;
+    color: #eee;
+}
+
+[info] td {
+    padding: 5px 10px;
+    text-align: center;
+}
+
+[info] tr:first-child {
+    background-color: purple;
+}
