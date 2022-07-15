@@ -20,6 +20,10 @@
     text-align: center;
 }
 
-[info] tr:first-child {
-    background-color: purple;
+[info] thead tr {
+    background-color: #002147;
+}
+
+[info] tbody tr {
+    background-color: #e6e7e3;
 }

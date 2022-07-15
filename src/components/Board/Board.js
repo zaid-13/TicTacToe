@@ -1,10 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import "./Board.css";
 
-function Board() {
-
-    const [winner, setWinner] = useState("");
-
+function Board({ winner, setWinner }) {
 
     const winningConditions = {
         across: [[1, 2, 3], [4, 5, 6], [7, 8, 9]],
